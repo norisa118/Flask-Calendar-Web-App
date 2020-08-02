@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta  charset="utf-8">
+        <title>Home</title>
+    </head>
+    <body>
+        {% extends "template.html" %}
+        {% block content %}
+        <div id="WelcScreen">
+            <h1>Welcome!</h1>
+            <ul class="menu">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('upcoming') }}">Upcoming</a></li>
+            </ul>
+        </div>
+        
+        {% endblock %}
+    </body>
+</html>
